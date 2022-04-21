@@ -1,0 +1,207 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
+#div1{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'menu main main main'
+    'menu main main main'
+    'menu main main main'
+    'footer footer footer footer'
+    ;
+    background-color: rgb(248, 233, 233);
+}
+#div2{
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    color: red;
+    
+    
+}
+.header div nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap:10vh;
+
+}
+.header nav ul li{
+    width: 5vw;
+    list-style: none;  
+}
+
+#div3{
+    grid-area: menu;
+    font-size: 1vw;
+    
+    color: rgb(237, 19, 19);
+    position: fixed;
+    margin-top: 8.5%;
+     
+}
+.link{
+    text-decoration: none;
+    color: blue;
+}
+
+#div4{  
+    grid-area: main;
+    color: red;
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.main{
+    display: flex; 
+    align-items: center;
+    flex-direction: column; 
+    color: white;
+}
+#netanelyaso{
+    width: 15vw;
+    height: 35vh;
+    border-radius: 100% ;
+    transition: transform 2s;
+    position: absolute;right:8%;
+    position: absolute; border-top-right-radius: 1%;
+    
+
+}
+#netanelyaso:hover{
+    transition-duration: 2s;
+    transform: scale(1.2);
+    box-shadow: 4px 4px 4px 4px rgb(82, 17, 82);
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(100, 212, 220);
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(217, 189, 103);
+}
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+#ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div5{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  #ynet{ 
+      width: 35vw;
+  }
+  #student-app{ 
+    width: 35vw;
+}
+#github{ 
+    width: 35vw;
+}
+#git-link{
+    color: black;
+    text-decoration: none;
+}
+.slider{
+    width: 50vw;
+    height: 70vh;
+    animation-name: slider;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-size: cover;   
+} 
+#mail{
+    width: 3vw;
+}
+#phone{
+    width: 3vw;
+}
+@keyframes slider{  
+    0%{background-image: url('burna-boy 1.jpg');}
+    25%{background-image: url('chris brown-1.png');}
+    50%{background-image: url('tupac-1.png');}
+    100%{background-image: url('biggie smalls-1.png');}
+}
+
+
+@media screen and (max-width:600px){ 
+    html, body {width: auto!important; overflow-x: hidden!important} 
+    .header{
+            background-color:rgb(100, 212, 220) ;
+            width: 100vw;
+        }
+         #div3{
+             display: flex;
+             flex-direction: column;
+             color: black;
+             height: 5vh;  
+             width: 8vw;
+             overflow: hidden;
+             background-color: black;
+             transition: all 2s;
+             z-index: 1;
+             position: fixed;
+             margin-top: 15%;
+         }
+       
+       #div3:hover{
+           color: red;
+           height:35vh;
+           width: 40vw;
+           font-size: medium;
+       }
+       #netanelyaso{
+           height: 20vh; 
+           position: absolute;left: 15%;
+           position: absolute; border-top-right-radius: 100%;
+       }
+       .slider{
+        width: 100vw;
+        height: 30vh;
+        animation-name: slider;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        background-size: cover;
+        
+        
+    }
+    @keyframes slider{
+        0%{background-image: url('burna-boy 1.jpg');}
+        25%{background-image: url('chris brown-1.png');}
+        50%{background-image: url('tupac-1.png');}
+        100%{background-image: url('biggie smalls-1.png');}
+    }
+    #mail{
+        width: 7vw;
+    }
+    #phone{
+        width: 7vw;
+    }
+    }
